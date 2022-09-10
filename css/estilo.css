@@ -1,0 +1,462 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a1a2a;
+    color: white;
+}
+.titulo{
+    color: #437aaa;
+    text-decoration: none;
+
+}
+.menu-principal{
+    background-color:#0a141d;
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content:space-around;
+    padding-left: 30px;
+    align-items: center;
+    position: fixed;
+}
+.elementos-ins{
+    margin: 0 0 0 auto;
+    padding: 0;
+    display: flex; 
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+.elementos-ins li{
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+.elementos-ins li .link{
+    text-decoration: none;
+    color:white;
+}
+.elementos-ins li .link:hover{
+    color: rgb(6, 75, 107);
+    cursor: pointer;
+}
+.menu-responsive{
+    background-color: #0a141d;
+    height: 200px;
+    width: 100%;
+    padding: 0px;
+    align-items: left;
+    display: none;
+    z-index: 1000;
+}
+@media screen and (max-width:990px){
+    .menu-responsive{
+        margin-top: 50px;
+        width: 100%;
+        height: 700px;
+        display: block;
+        padding: 10px;
+        font-size: 30px;
+        transform: translatex(-100%);
+        z-index: 10000;
+        position:  fixed;
+    }
+}
+
+.js-menu .menu-responsive{
+    transform: translatex(0px);
+}
+.elementos-res{
+    margin: 0 auto;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: left;
+}
+.elementos-res ul{
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    }
+.li-res{
+margin-top: 0.5rem;
+margin-bottom: 0.5rem;
+padding-bottom: 0.5rem;
+border-bottom: 1px solid wheat;}
+.link-res{
+    margin: 0;
+    margin-top: 40px;
+    color:#ffffff;
+    text-decoration: none;
+}
+
+/*Página principal*/
+.container{
+    margin: 0 auto;
+
+    background-color: #131341;
+    background-image: url(https://pbs.twimg.com/media/FW2DCrZWYAE2NDA.jpg);
+    padding: 200px 50px;
+    border-radius: 5px;
+    border-color: white;
+    z-index: 100;
+}
+.container:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url(https://pbs.twimg.com/media/FW2DCrZWYAE2NDA.jpg);
+}
+.container .sobre-mi{
+    text-align: center;
+}
+.container .sobre-mi h1{
+    color:white;
+    text-shadow: 0 0 4px black;
+}
+.container-2{
+    height: 250px;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.container-2 h2{
+    margin-top: 20px;
+    text-align: center;
+}
+.container-2 .sobre-mi-info{
+    margin: 0 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+      
+}
+.container-2 .sobre-mi-info .contenido{
+    padding: 20px 50px;
+    height: 200px;
+    width: 300px;
+    margin: 0 0 0 0 ;
+    color: white;
+    background-color: #0a141d;
+    border-radius: 5px;
+    align-items: center center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.img{
+    margin: 0;
+    background-color: red;
+    margin-top: 10px;
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+}
+.img:hover{
+    border-style: solid;
+    border-color: #efefef;
+}
+.img-1{
+    background-image: url(http://elportaldemendoza.com/wp-content/uploads/2016/05/Paseode-la-Patria-San-Martin.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.img-2{
+    background-image: url(https://www.estudiaradistancia.com.ar/img/article/en-que-consiste-la-tecnicatura-en-redes-informaticas);
+    background-position: center;
+    background-size: 100%;
+}
+.img-3{
+    background-image: url(    https://pygmalion.tech/wp-content/uploads/2020/06/Qu%C3%A9-es-fullstack-Pygmalion-Tech-2.png);
+    background-position: center;
+    background-size: 100%;
+
+}
+.container-3{
+    margin: 0;
+    padding: 10px 50px;
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+
+}
+.container-3 .te-invito{
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    border-style: solid;
+    border-color: #0a141d;
+    border-radius: 20px;
+}
+.container-3 .te-invito h3 a{
+    text-decoration: none;
+    color: #437aaa;
+}
+
+
+/*Footer*/
+
+
+.footer{
+    width: 100%;
+    background-color: #0a141d;
+    bottom: 0;
+    z-index: 999;
+    margin-top: 50px;
+}
+.footer .grupo-1{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 45px 0px;
+}
+.footer .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .grupo-1 .box figure img{
+    width: 250px;
+}
+.footer .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.footer .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.footer .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.footer .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.footer .grupo-2 small{
+    font-size: 15px;
+}
+.contacto{
+    text-decoration: none;
+    color:rgb(6, 75, 107);
+}
+@media screen and (max-width:1000px){
+    .contenedor-hambur{
+        position:fixed;
+    }
+    .container-2{
+        max-width: 50%;
+    }
+    .footer .grupo-1{
+        z-index: 999;
+        height: 50%;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+    }
+    .footer .grupo-1{
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        max-width: 100%;
+        height: 300px;
+    }
+    .container-2{
+        max-width: 100%;
+        height: 700px;
+    }
+    .contenido{
+        margin-bottom: 30px;
+    }
+    .container-3{
+        max-width: 100%;
+        height: 150px;
+    }
+    .box{
+        margin-left: 10px;
+                margin-right: 10px;
+    }
+    .b2{
+        display: none;
+        width: 100px;
+        width: 300px;
+    }
+    .sobre-mi-info section{
+        margin-bottom: 300px;
+    }
+}
+
+/*íconos*/
+.fa-facebook{
+    background: url('https://api.iconify.design/ant-design/facebook-filled.svg') no-repeat center center / contain;
+}
+.fa-instagram{
+    background: url('https://api.iconify.design/akar-icons/instagram-fill.svg') no-repeat center center / contain;
+}
+.fa-git-hub{
+    background: url('https://api.iconify.design/fa-brands/github-square.svg') no-repeat center center / contain;
+
+}
+.fa-linkedin{
+    background: url('https://api.iconify.design/akar-icons/linkedin-box-fill.svg') no-repeat center center / contain;
+}
+
+
+/*Segunda página*/
+.caja-invisible{
+    background-color: aqua;
+    height: 180px;
+}
+.mis-trabajos{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+.container-proyecto{
+    border-radius: 10px;
+    margin-top: 70px;
+    background-color: #112b44;
+    height: 600px;
+    width: 800px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+.container-proyecto h1{
+    text-align: center;
+}
+.caja-proyecto{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: #0d2033;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+
+}
+.nombre-proyecto{
+    height: 30px;
+    background-color: #437aaa;
+    text-align: center;
+    border-start-end-radius: 15px;
+}
+.desc-proyecto{ 
+    text-align: center;
+    background-color: #023a72;
+}
+.imagen-proyecto{
+    width: 100px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 7.5px;
+    background: url(https://www.yeeply.com/wp-content/uploads/2017/04/crear-una-pagina-web-para-vender-2-1024x728-1.jpg);
+    background-position: center center;
+}
+@media screen and (max-width:1000px){
+    .container-proyecto{
+        height: 900px;
+        width: 400px;
+    }
+}
+@media screen and (max-width:300px){
+    .container-proyecto{
+        height: 2000px;
+        width: 400px;
+    }
+    .elementos-ins{
+        display: none;
+    }
+}
+/*Tercera página*/
+
+.body-3{
+    display: flex;
+    justify-content: center;
+}
+.skills-container{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.skills-container-in{
+    background-color: #0d2033;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 800px;
+    height: 400px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.skills-caja{
+
+    width: 100px;
+    height: 100px;
+}
+.skills-name{
+
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+.skills-image{
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+}
+.img-res{
+    width: 60px;
+    height: 60px;
+}
+@media screen and (max-width:1000px){
+    .skills-container-in{
+        height: 900px;
+        width: 400px;
+    }
+}
+@media screen and (max-width:400px){
+    .skills-container-in{
+        height: 2000px;
+        width: 400px;
+    }
+
+}
